@@ -6,7 +6,7 @@ Ein datengetriebenes Projekt zur Analyse von Lieferperformance, Produkten, Regio
 
 ## Projektübersicht
 
-Dieses Power BI Dashboard liefert fundierte Einblicke in verschiedene Dimensionen einer Lieferkette und wurde entwickelt, um strategische Entscheidungen im Bereich Customer Operations & Logistics zu unterstützen.
+Dieses Power BI Dashboard analysiert einen realistischen Supply-Chain-Datensatz und bietet strategische Einblicke für datenbasierte Entscheidungen im Bereich Operations, Logistik und Customer Intelligence.
 
 ### Business-Ziele:
 
@@ -24,35 +24,58 @@ Das Projekt umfasst **5 interaktive Seiten**, die jeweils unterschiedliche Gesch
 ---
 
 ### Lieferketten- und Auftragsübersicht  
-> *KPI-Überblick und Trends auf Makroebene*
+> *Operative KPI-Übersicht und Entwicklung auf Makroebene*
+
+Diese Seite zeigt zentrale Leistungskennzahlen wie Bestellvolumen, Lieferzeiten, Verspätungsquote und Gewinnentwicklung im Zeitverlauf.  
+Mit Hilfe interaktiver Filter (Land, Versandart, Produktkategorie, Monat) lassen sich verschiedene Dimensionen explorieren.
+
+**Kennzahlen-Highlights:**
 
 - Gesamtanzahl der Bestellungen: **65 752**
-- Ø Lieferzeit (tatsächlich): **3,5 Tage**
+- Ø Lieferzeit (tatsächlich): **3,50 Tage**
+- Ø Lieferzeit (geplant): **2,93 Tage**
 - Anteil verspäteter Lieferungen: **54,8 %**
-- Monatliche Entwicklung von Bestellungen und Gewinn
+- Monatlicher Höchstwert: **2 124 Bestellungen (Dez 2017)**
 
  ![](Page%201.png)
 
 ---
 
 ### Periodenanalyse: Vor und nach September 2017  
-> *Vergleich zweier strategisch relevanter Zeiträume*
+> *Strategische Vergleichsanalyse mit Fokus auf Rabattpolitik und Gewinn*
 
-- Ø Rabatt: **+34 %** Anstieg (von € 20,13 → € 27,13)
-- Ø Bestellwert: **+35 %** Wachstum
-- Gesamtgewinn: **–89 %** Rückgang
-- Trotz +35% höherem Bestellwert sank der Gewinn um 89%.  Interpretation: 
+Diese Seite analysiert zwei Zeiträume — **vor** und **nach** dem Wendepunkt im September 2017, als das Bestellvolumen deutlich anstieg.
+
+**Wesentliche Kennzahlenvergleiche:**
+
+| Zeitraum             | Bestellungen | Gesamtgewinn (€) | Ø Rabatt (€) | Ø Bestellwert (€) |
+|----------------------|--------------|------------------|--------------|-------------------|
+| Bis August 2017      | 55 626       | € 3 563 523       | € 20,13      | € 178,37          |
+| Ab September 2017    | 10 126       | € 403 380         | € 27,13      | € 240,60          |
+
+**Interpretation:**  
+Trotz höherem durchschnittlichen Bestellwert stürzte der Gesamtgewinn um **89 %** ab. Der Grund liegt u. a. in aggressiveren Rabatten und einem veränderten Produktmix. 
 
 ![](Page%202.png)
 
 ---
 
 ### Produktanalyse  
-> *Welche Produkte treiben Umsatz & Profitabilität?*
+> *Identifikation margenträchtiger Kategorien und Top-Produkte*
 
-- Höchster Umsatz: **„Fishing“ – € 6,23 Mio**
-- Höchster Gewinn: **„Fishing“ – € 756 221**
-- Weitere Top-Kategorien: **Cleats**, **Camping & Hiking**, **Cardio Equipment**
+Diese Seite fokussiert sich auf die Umsatz- und Gewinnleistung einzelner Produktkategorien und -namen.
+
+**Top-Performing Kategorien:**
+
+| Kategorie           | Umsatz (€)     | Gewinn (€)     |
+|---------------------|----------------|----------------|
+| Fishing             | 6,23 Mio       | € 756 221       |
+| Cleats              | 3,98 Mio       | € 494 637       |
+| Camping & Hiking    | 3,70 Mio       | € 427 456       |
+| Cardio Equipment    | 3,32 Mio       | € 383 011       |
+
+Die Top-Kategorien stammen überwiegend aus dem Outdoor- und Sportbereich.  
+Gleichzeitig zeigen einige Produktgruppen mit hohem Volumen eine unterdurchschnittliche Gewinnspanne — Potenzial für Optimierung im Sortimentsmanagement.
 
 ![](Page%203.png)
 
@@ -69,11 +92,19 @@ Das Projekt umfasst **5 interaktive Seiten**, die jeweils unterschiedliche Gesch
 ---
 
 ### Logistikanalyse  
-> *Performancevergleich von Versandarten*
+> *Geografische Auswertung von Performance und Effizienz*
 
-- „First Class“: Höchste Verspätungsquote (**95,32 %**) 
-- „Same Day“: Ø Lieferzeit nur **0,48 Tage**
-- Höchster Gewinn pro Bestellung: „First Class“ mit **€ 23,12**
+Hier werden Unterschiede in der Lieferperformance je nach Land und Region untersucht.
+
+**Analysedimensionen:**
+
+- Ø Lieferzeit pro Region
+- Verspätungsquote nach Land und Region
+- Gewinnverteilung nach Region
+- Matrix Region × Versandart
+
+**Erkenntnisse:**  
+In bestimmten Regionen treten überdurchschnittlich viele Lieferverzögerungen auf (teilweise > 40 %). Besonders Regionen mit hohem Bestellvolumen bieten Potenzial für gezielte logistische Optimierung.
 
  ![](Page%205.png)
 
@@ -94,11 +125,12 @@ Das Projekt umfasst **5 interaktive Seiten**, die jeweils unterschiedliche Gesch
 
 ---
 
-## Fazit
+## Key Insights (Executive Summary)
 
-> Das Dashboard zeigt, wie Umsatz, Lieferperformance und Gewinn in Zusammenhang stehen.  
-> Rabatte, Produktmix und Versandstrategie beeinflussen maßgeblich die Rentabilität.  
-> Handlungsempfehlungen können aus Produkt-, Logistik- und Regionalanalysen abgeleitet werden.
+- **Gewinn ist nicht gleich Volumen:** Trotz Wachstum ging der Gesamtgewinn zurück — Rabatte & Sortimentsmischung sind entscheidend.
+- **Produktdivergenzen:** Outdoor-Artikel haben starke Performance; andere Produkte binden Umsatz ohne entsprechende Marge.
+- **Regionale Unterschiede:** Verspätungen sind geografisch konzentriert; Logistik kann gezielt optimiert werden.
+- **Versandstrategie beeinflusst Pünktlichkeit & Gewinn:** „First Class“ liefert Profit, aber wenig Pünktlichkeit – hier sind Trade-offs zu managen.
 
 ---
 
